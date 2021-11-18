@@ -1,3 +1,17 @@
+/**
+  * Universidad de La Laguna
+  * Escuela Superior de Ingeniería y Tecnología
+  * Grado en Ingeniería Informática
+  * Informática Básica 2021-2022
+  *
+  * @file divisors_in_order.cc
+  * @author Guillermo Hernández Mesa alu0101247519@ull.edu.es
+  * @date Nov 18 2022
+  * @brief Write a program to print in order all the divisors of a given number.
+  * @bug There are no known bugs
+  * @see https://jutge.org/problems/P39308
+  */
+ 
 #include <iostream>
 
 int main() {
