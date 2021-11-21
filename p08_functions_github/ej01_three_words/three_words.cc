@@ -13,11 +13,17 @@
   */
  
 #include <iostream>
+#include <string>
+
+void resultado(std::string, std::string, std::string);
 
 int main() {
 	std::string palabra1, palabra2, palabra3;
 	std::cin >> palabra1 >> palabra2 >> palabra3;
-	std::cout << palabra3 << ' ' << palabra2 << ' ' << palabra1 << std::endl;
-
+  resultado(palabra1, palabra2, palabra3);
 	return 0;
+}
+
+void resultado (std::string palabra1, std::string palabra2, std::string palabra3 ) {
+  std::cout << palabra3 << ' ' << palabra2 << ' ' << palabra1 << std::endl;
 }
