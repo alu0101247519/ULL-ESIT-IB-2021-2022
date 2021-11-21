@@ -14,18 +14,27 @@
  
 #include <iostream>
 
+void operaciones(int, int);
+
 int main() {
 
-    int numero;
-    while (std::cin >> numero) {
-	std::cout << "divisors of " << numero << ':';
+  int numero;
+  while (std::cin >> numero) {
+	  std::cout << "divisors of " << numero << ':';
 
-	int raiz_cuadrada = 1;
-	while (raiz_cuadrada * raiz_cuadrada < numero) {
-        ++raiz_cuadrada;
-    } 
+	  int raiz_cuadrada = 1;
+	  while (raiz_cuadrada * raiz_cuadrada < numero) {
+      ++raiz_cuadrada;
+    }    
 
-	for (int i = 1; i <= raiz_cuadrada; ++i)
+    operaciones(numero, raiz_cuadrada);
+	  std::cout << std::endl;
+  }
+  return 0;
+}
+
+void operaciones(int numero, int raiz_cuadrada) {
+    	for (int i = 1; i <= raiz_cuadrada; ++i)
 	    if (numero%i == 0) {
             std::cout << ' ' << i;
         } 
@@ -35,8 +44,4 @@ int main() {
             std::cout << ' ' << numero / i;
         }
     }
-	    
-	std::cout << std::endl;
-    }
-    return 0;
 }
