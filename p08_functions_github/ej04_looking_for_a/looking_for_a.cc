@@ -20,7 +20,7 @@ int main() {
   char frase;
   std::cin >> frase;
 
-  while(frase != '.' and frase != 'a') {
+  while(frase != '.' && frase != 'a') {
     std::cin >> frase;
   }
   resultado(frase);
