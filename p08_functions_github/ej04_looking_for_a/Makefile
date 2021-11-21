@@ -3,7 +3,7 @@ CFLAGS = -Wall
 
 all: looking_for_a
 
-primality: looking_for_a.o
+looking_for_a: looking_for_a.o
 	$(CC) -o looking_for_a looking_for_a.o  $(CFLAGS)
 
 clean:	
